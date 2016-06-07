@@ -1,5 +1,7 @@
 <?php
 
+
+
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\bootstrap\Modal;
@@ -18,8 +20,10 @@ use kartik\date\DatePicker;
     <?= $form->field($model, 'PEX_descripcion')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'PEX_fecha')->widget(DatePicker::classname(), [
+        //'convertFormat' => true,
 	    'options' => ['placeholder' => 'Ingrese mes...'],
 	    'pluginOptions' => [
+            'convertFormat' => true,
 	        'autoclose'=>true,
 	        'format' => 'M-yyyy',
 	    ]

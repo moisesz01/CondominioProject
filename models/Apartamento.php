@@ -46,10 +46,10 @@ class Apartamento extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'APA_NOMBRE' => 'Apa  Nombre',
-            'APA_DESCRIPCION' => 'Apa  Descripcion',
+            'APA_NOMBRE' => 'Nombre del Apartamento',
+            'APA_DESCRIPCION' => 'Descripción del Apartamento',
             'piso_PIS_id' => 'Piso  Pis ID',
-            'user_id' => 'User ID',
+            'user_id' => 'Cliente',
         ];
     }
 

@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = 'Datos del Pago Extraordinario';
 ?>
 <div class="pago-extraordinario-view">
 
-    <h1><?= Html::encode('Datos del PAgo Extraordinario') ?></h1>
+    <h1><?= Html::encode('Datos del Pago Extraordinario') ?></h1>
 
     <p>
         <?= Html::a('Actualizar', ['update', 'id' => $model->PEX_id], ['class' => 'btn btn-primary']) ?>

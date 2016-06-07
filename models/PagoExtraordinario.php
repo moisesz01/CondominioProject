@@ -24,6 +24,7 @@ class PagoExtraordinario extends \yii\db\ActiveRecord
         return 'pagoExtraordinario';
     }
 
+   
     /**
      * @inheritdoc
      */

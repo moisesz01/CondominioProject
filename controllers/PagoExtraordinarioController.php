@@ -62,7 +62,16 @@ class PagoExtraordinarioController extends Controller
     {
         $model = new PagoExtraordinario();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $date = new \DateTime($model->PEX_fecha);
+            $date = $date->format('Y-m-d');
+      
+            $model->PEX_fecha = $date;
+            
+    
+
+
+            $model->save();
             return $this->redirect(['view', 'id' => $model->PEX_id]);
         } else {
             return $this->render('create', [

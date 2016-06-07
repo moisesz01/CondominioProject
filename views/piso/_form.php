@@ -76,7 +76,7 @@ use app\models\User;
                             <div class="col-sm-6">
                             	<?=$form->field($modelApartamento, "[{$i}]user_id")->dropDownList(
                                     ArrayHelper::map(User::find()->all(),'id','username'),
-                                    ['prompt'=>'Seleccione Dueño...']); 
+                                    ['prompt'=>'Seleccione Cliente...']); 
                                 ?>                                
                             </div>
                             <div class="col-sm-6">
